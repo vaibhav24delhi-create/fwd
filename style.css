@@ -1,0 +1,677 @@
+
+:root {
+    --primary-color: #1c9aba;
+    --primary-dark: #0f6c8d;
+    --background-color: #a9c6e3;
+    --section-bg: #ffffff;
+    --light-gray: #f4f4f4;
+    --text-color: #131313;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    background: linear-gradient(
+        270deg,
+        #a9c6e3,
+        #d4e4f7,
+        #a9c6e3,
+        #c2d9f2
+    );
+
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+}
+.gradient-text {
+    background: linear-gradient(
+        90deg,
+        #2fc4e6,
+        #1c9aba,
+        #0f6c8d
+    );
+
+    -webkit-text-fill-color: transparent;
+
+    font-weight: bold;
+}
+
+    header h1 {
+        margin: 0;
+color: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    }
+
+    header h1:hover {
+        letter-spacing: 3px;
+        transition: 1s;
+    }
+
+
+    h2, h3 {
+    color: var(--text-color);
+}
+
+    ul, ol {
+        margin-left: 20px;
+    }
+
+    table {
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #2974a5;
+    }
+
+    header {
+    background: radial-gradient(
+        circle,
+        #2fc4e6,
+        var(--primary-color),
+        var(--primary-dark)
+    );
+
+    padding: 25px;
+    text-align: center;
+    color: white;
+    border-bottom: 4px solid var(--primary-dark);
+}
+
+    form {
+        background-color: #3d8ef0;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="submit"], input[type="reset"] {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover, input[type="reset"]:hover {
+        background-color: #2980b9;
+    }
+
+    /* Header Styling */
+    header {
+    background: linear-gradient(
+        to right,
+        var(--primary-color),
+        var(--primary-dark)
+    );
+
+    padding: 25px;
+    text-align: center;
+    color: white;
+    border-bottom: 4px solid var(--primary-dark);
+}
+
+
+    /* Navigation Bar */
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+/* Hover Effect */
+.navbar li a:hover {
+    background-color: white;
+    color: #1c9aba;
+    transform: translateY(-2px);
+}
+
+/* Active Link */
+.navbar li a.active {
+    background-color: white;
+    color: #1c9aba;
+}
+
+    .tagline {
+        font-style: italic;
+        font-size: 20px;
+        margin-top: 8px;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+        color: #f0f0f0;
+    }
+
+    .about-section {
+        background-color: white;
+        padding: 30px;
+        margin: 30px;
+        border-radius: 10px;
+        overflow: hidden;   /* important for float */
+    }
+
+    /* Profile Image */
+    .profile-img {
+        width: 180px;
+        float: left;
+        margin-right: 20px;
+        border: 3px solid var(--primary-color);
+        border-radius: 10px;
+    }
+
+    /* About Text */
+    .about-text p {
+        text-align: justify;
+        line-height: 1.6;
+    }
+
+    /* Clear float after section */
+    .about-section::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .skills-section {
+    background-color: var(--light-gray);
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+    .skill-box {
+        display: inline-block;
+        background-color: #1c9aba;
+        color: white;
+        padding: 10px 20px;
+        margin: 10px;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+    .skill-box:hover {
+    background: radial-gradient(
+        circle,
+        #4fd3f5,
+        var(--primary-color)
+    );
+    cursor: pointer;
+}
+    .projects-section {
+    background-color: white;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+}
+/* ================= GRID LAYOUT ================= */
+
+.projects-grid {
+    display: grid;
+
+    /* responsive columns */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+    margin-top: 20px;
+}
+
+
+    .project-card {
+        border: 2px solid #1c9aba;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        transition: 0.3s;
+    }
+
+    .project-card h3 {
+        margin-top: 0;
+    }
+
+    /* Hover Effect */
+    .project-card:hover {
+        background-color: #e6f2ff;
+        transform: scale(1.02);
+    }
+    .contact-section {
+        background-color: #f4f4f4;
+        padding: 30px;
+        margin: 30px;
+        border-radius: 10px;
+    }
+
+    .contact-section p {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    /* Style form inputs */
+    .contact-section input[type="text"],
+    .contact-section input[type="email"],
+    .contact-section textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    /* Focus effect */
+    .contact-section input:focus,
+    .contact-section textarea:focus {
+        border-color: #1c9aba;
+        outline: none;
+    }
+    .university-card {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        width: 250px;
+    }
+
+    .college-link {
+        text-decoration: none;
+        font-weight: bold;
+        color: #1c9aba;
+    }
+
+    .college-link:hover {
+        text-decoration: underline;
+    }
+
+    .university-logo {
+        width: 120px;
+        border-radius: 6px;
+    }
+    .footer {
+    background: linear-gradient(
+        to right,
+        var(--primary-dark),
+        var(--primary-color)
+    );
+
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+    .footer p {
+        margin: 5px 0;
+    }
+
+    .social-links {
+        margin-top: 10px;
+    }
+
+    .social-links a {
+        text-decoration: none;
+        color: white;
+        margin: 0 10px;
+        font-weight: bold;
+    }
+
+    .social-links a:hover {
+        text-decoration: underline;
+    }
+    .display-section {
+        background-color: white;
+        padding: 30px;
+        margin: 30px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    /* Block */
+    .block-demo {
+        display: block;
+        background-color: #1c9aba;
+        color: white;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    /* Inline */
+    .inline-demo {
+        display: inline;
+        background-color: #ff9800;
+        color: white;
+        padding: 10px;
+    }
+
+    /* Inline-Block */
+    .inline-block-demo {
+        display: inline-block;
+        background-color: #4caf50;
+        color: white;
+        margin: 10px;
+        padding: 10px;
+    }
+    .overflow-section {
+        background-color: white;
+        padding: 30px;
+        margin: 30px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .overflow-hidden,
+    .overflow-scroll,
+    .overflow-auto {
+        width: 300px;
+        height: 60px;
+        margin: 15px auto;
+        padding: 10px;
+        border: 2px solid #1c9aba;
+    }
+
+    /* Hidden */
+    .overflow-hidden {
+        overflow: hidden;
+    }
+
+    /* Scroll */
+    .overflow-scroll {
+        overflow: scroll;
+    }
+
+    /* Auto */
+    .overflow-auto {
+        overflow: auto;
+    }
+    .overflow-hidden,
+    .overflow-scroll,
+    .overflow-auto {
+        text-align: left;
+    }
+.about-section p {
+    color: #333;
+}
+.navbar > li {
+    border-right: 1px solid rgba(255,255,255,0.3);
+}
+h2 + p {
+    font-style: italic;
+}
+h2 ~ h3 {
+    color: #0f6c8d;
+}
+a[target="_blank"] {
+    color: rgb(36, 18, 228);
+    font-weight: bold;
+}
+ol li:nth-child(2) {
+    color: red;
+}
+ol li:first-child {
+    font-weight: bold;
+}
+ol li:last-child {
+    color: green;
+}
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.pagination a {
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.pagination a:hover,
+.pagination .active-page {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.links-section {
+    background-color: white;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.links-section a {
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #1c9aba;
+}
+
+.links-section a:hover {
+    text-decoration: underline;
+}
+
+.active-page {
+    background-color: #1c9aba;
+    color: white !important;
+}
+.links-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.links-section li {
+    margin: 10px 0;
+}
+
+.links-section a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.links-section a:hover {
+    background-color: var(--primary-dark);
+}
+/* ========================= */
+/* Responsive Design - Media Query */
+
+@media screen and (max-width: 768px) {
+
+    /* Navbar becomes vertical */
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* About section image center */
+    .profile-img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+    /* Skills stack nicely */
+    .skills-section {
+        flex-direction: column;
+    }
+
+    /* Projects full width */
+    .project-card {
+        width: 90%;
+    }
+
+    /* Table responsive */
+    table {
+        width: 95%;
+    }
+
+    /* Reduce margins */
+    section {
+        margin: 15px;
+        padding: 20px;
+    }
+}
+input[type="submit"] {
+    background: linear-gradient(
+        to right,
+        var(--primary-color),
+        var(--primary-dark)
+    );
+}
+.gradient-text {
+    background: linear-gradient(
+        90deg,
+        #2fc4e6,
+        #1c9aba,
+        #0f6c8d,
+        #2fc4e6
+    );
+    background-size: 300%;
+    -webkit-text-fill-color: transparent;
+
+    animation: gradientMove 5s infinite linear;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0%; }
+    100% { background-position: 300%; }
+}
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.gradient-text {
+    animation: fadeSlide 1.5s ease-in-out;
+}
+@keyframes popUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.skill-box {
+    animation: popUp 0.8s ease forwards;
+}
+@keyframes floatCard {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+.project-card:hover {
+    animation: floatCard 0.6s ease-in-out;
+}
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    background: linear-gradient(
+        270deg,
+        #1c9aba,
+        #4facfe,
+        #00c6ff,
+        #1c9aba
+    );
+
+    background-size: 400% 400%;
+    animation: gradientMove 8s ease infinite;
+}
+/* ========================= */
+/* Skill Progress Bars */
+
+.skill {
+    width: 80%;
+    margin: 15px auto;
+    text-align: left;
+}
+
+.progress {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg,
+        var(--primary-color),
+        #4facfe
+    );
+    border-radius: 20px;
+    animation: loadBar 2s ease forwards;
+}
+
+/* Skill Levels */
+.html { width: 90%; }
+.css { width: 85%; }
+.python { width: 75%; }
+.c { width: 70%; }
+
+/* Animation */
+@keyframes loadBar {
+    from {
+        width: 0;
+    }
+}
